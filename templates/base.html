@@ -15,10 +15,10 @@
 </head>
 
 <body hx-target="this"
-  class=" min-h-screen flex flex-col items-center bg-[url('/static/rainbow-colorful.gif')] bg-no-repeat bg-right-top bg-[length:350px_260px]">
+  class=" bg-gradient-to-r from-green-900 to-green-950 min-h-screen flex flex-col items-center  bg-no-repeat bg-right-top bg-[length:350px_260px]">
   {% include "components/navbar.html" %}
-    {% block content %}
-    {% endblock %}
+  {% block content %}
+  {% endblock %}
 </body>
 
 </html>
