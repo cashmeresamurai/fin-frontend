@@ -4,8 +4,8 @@
   <div class="w-full flex justify-between md:hidden">
     <!-- Logo -->
     <a class="btn btn-ghost text-lg">
-      <img alt="Logo" src="/static/logo.jpeg" class="h-6 w-6 mask mask-circle" />
-      Game Name
+      <img alt="Logo" src="/static/50s.jpeg" class="h-6 w-6 mask mask-circle" />
+      50s Receipt
     </a>
 
     <div class="dropdown dropdown-end">
@@ -27,33 +27,43 @@
   </div>
 
   <!-- Menu for desktop -->
-  <div class="w-full hidden md:grid grid-cols-5 gap-2">
-    <!-- Left menu -->
-    <ul class="col-span-2 menu md:menu-horizontal justify-end hidden">
-      <li><a>Purchase</a></li>
-      <li><a>Login</a></li>
-    </ul>
+  <div class="w-full hidden md:grid grid-cols-5 gap-2 items-center">
+    <!-- Left menu with Purchase button -->
+    <div class="flex justify-start">
+      <a class="btn btn-ghost text-lg">
+        Purchase
+      </a>
+    </div>
+
+    <!-- Left of logo with Discord button -->
+    <div class="flex justify-end">
+      <a class="btn btn-ghost text-lg">
+        <img src="/static/discord.svg" alt="Discord" class="h-8 w-8">
+        Discord
+      </a>
+    </div>
 
     <!-- Centered logo -->
     <div class="flex justify-center">
       <a class="btn btn-ghost text-lg">
-        <img alt="Logo" src="/static/50s.png" class="h-8 w-8" />
+        <img alt="Logo" src="/static/50s.jpeg" class="h-8 w-8 rounded-full" />
         50's Receipt
       </a>
     </div>
-    <!-- Logo -->
 
-
-    <!-- Right menu -->
-    <ul class="col-span-2 menu md:menu-horizontal justify-start gap-4 hidden">
-      <a class="btn bg-base-300 outline-none">
-        <img src="/static/discord.svg" alt="Discord" class="h-8 w-8">
-        Discord
-      </a>
-      <button class="btn bg-base-300 outline-none">
+    <!-- Right of logo with Telegram button -->
+    <div class="flex justify-start">
+      <a class="btn btn-ghost text-lg">
         <img src="/static/telegram.svg" alt="Telegram" class="h-8 w-8">
         Telegram
-        </a>
-    </ul>
+      </a>
+    </div>
+
+    <!-- Rightmost menu with Login button -->
+    <div class="flex justify-end">
+      <a class="btn btn-ghost text-lg">
+        Login
+      </a>
+    </div>
   </div>
 </nav>

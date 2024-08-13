@@ -1,21 +1,19 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="forest">
+<html lang="en" data-theme="dark">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="/static/htmx.min.js"></script>
+  <!-- <script src="/static/htmx.min.js"></script> -->
+  <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+  <!-- <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" /> -->
   <link rel="stylesheet" href="/static/output.css" />
-  <link rel="icon" type="image/webp"
-    href="https://pocketbase.sakura.pm/api/files/74gbq4ykcfsb8xe/17qe39rrkswuqfh/favicon_jW8kWCpk0s.webp">
+  <!-- <link rel="icon" type="image/webp" -->
 
   <title>{% block title %}{{page_title}}{% endblock %}</title>
-  <script defer src="https://analytics.sakura.pm/script.js"
-    data-website-id="6dfb1ed9-4053-4b99-9d95-ce81db561f8a"></script>
-</head>
 
 <body hx-target="this"
-  class=" bg-gradient-to-r from-green-900 to-green-950 min-h-screen flex flex-col items-center  bg-no-repeat bg-right-top bg-[length:350px_260px]">
+  class="min-h-screen flex flex-col items-center">
   {% include "components/navbar.html" %}
   {% block content %}
   {% endblock %}
