@@ -12,8 +12,7 @@
 
   <title>{% block title %}{{page_title}}{% endblock %}</title>
 
-<body hx-target="this"
-  class="min-h-screen w-full flex flex-col items-center font-sans">
+<body hx-target="this" class="min-h-screen w-full flex flex-col items-center font-sans">
   {% include "components/navbar.html" %}
   {% block content %}
   {% endblock %}
