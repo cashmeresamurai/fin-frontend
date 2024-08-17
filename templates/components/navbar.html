@@ -9,19 +9,24 @@
     </a>
 
     <div class="dropdown dropdown-end">
-      <button class="btn btn-ghost">
-        <i class="fa-solid fa-bars text-lg"></i>
+      <button class="btn btn-square btn-ghost custom-burger-button">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+          class="inline-block h-5 w-5 stroke-current">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
       </button>
 
       <ul tabindex="0" class="dropdown-content menu z-[1] bg-base-200 p-6 rounded-box shadow w-56 gap-2">
-        <li><a>About</a></li>
-        <li><a>Teams</a></li>
-        <li><a>News</a></li>
-        <li><a>Community</a></li>
-        <a class="btn btn-primary btn-sm">
-          <i class="fa-brands fa-space-awesome"></i>
-          Access
-        </a>
+        <li><a class="btn btn-outline custom-border text-lg"
+            href="https://discord.com/api/oauth2/authorize?client_id=1215618461619978250&redirect_uri=https://50receipts.com/api/callback&response_type=code&scope=identify">LOGIN</a>
+        </li>
+        <li><a class="btn btn-ghost custom-border text-lg" href="https://t.me/BuyReceiptsBot">PURCHASE</a></li>
+        <li><a class="btn btn-ghost text-lg"><img src="/static/discord.svg" alt="Discord" class="h-6 w-6"
+              href="https://50receipts.com/join"> DISCORD</a>
+        </li>
+        <li><a class="btn btn-ghost text-lg"><img src="/static/telegram.svg" alt="Telegram" class="h-6 w-6"
+              href="https://50receipts.com/telegram">
+            TELEGRAM</a></li>
       </ul>
     </div>
   </div>
@@ -67,3 +72,6 @@
     </div>
   </div>
 </nav>
+
+<style>
+</style>
